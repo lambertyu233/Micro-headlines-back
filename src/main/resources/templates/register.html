@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        .abc{
+            position: absolute;
+            left: 40%;
+            top: 35%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body class="abc">
+    <form action="register" method="post">
+        用户名：<input type="text" name="username"/><br />
+        密码：<input type="password" name="userPwd"/><br />
+        昵称：<input type="text" name="nikeName"/><br />
+        <input type="submit" value="注册"/>
+        <input type="reset" value="重置"/>
+    </form>
+</body>
+</html>

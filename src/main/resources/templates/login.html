@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        .abc{
+            position: absolute;
+            left: 40%;
+            top: 35%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<div class="abc">
+    <form action="user/login" method="post">
+        用户名：<input type="text" name="username"/><br />
+        密码：<input type="password" name="userPwd"/><br />
+        <input type="submit" value="账号密码登录"/>
+        <input type="reset" value="重置"/>
+    </form>
+    <form action="user/getUserInfo" method="get">
+        token：<input type="text" name="token"/><br />
+        <input type="submit" value="token登录"/>
+        <input type="reset" value="重置"/>
+    </form>
+    <form action="user/register" method="get">
+        <input type="submit" value="注册"/>
+    </form>
+</div>
+</body>
+</html>

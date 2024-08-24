@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        .abc{
+            position: absolute;
+            left: 40%;
+            top: 35%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>搜索</title>
+</head>
+<body>
+<div class="abc">
+    <form action="findNewsPage" method="post">
+        搜索词：<input type="text" name="keyWords"/><br />
+        类型：<input type="text" name="type"/><br />
+        第几页：<input type="text" name="pageNum"/><br />
+        每页条目数：<input type="text" name="pageSize"/><br />
+        <input type="submit" value="搜索"/>
+        <input type="reset" value="重置"/>
+    </form>
+    <p>详细页面：</p>
+    <form action="showHeadlineDetail" method="post">
+        hid：<input type="text" name="hid"/><br />
+        <input type="submit" value="搜索"/>
+        <input type="reset" value="重置"/>
+    </form>
+</div>
+</body>
+</html>
